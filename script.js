@@ -1,9 +1,9 @@
 let currentQuestion = 0;
 let correctAnswers = 0;
 
+document.querySelector(".progress--bar").style.width = 0;
+document.querySelector(".home_screen button").addEventListener("click", showQuestion);
 document.querySelector(".scoreArea button").addEventListener("click", resetQuiz);
-
-showQuestion();
 
 function showQuestion() {
     if(questions[currentQuestion]) {
@@ -19,6 +19,7 @@ function showQuestion() {
         });
         document.querySelector(".options").innerHTML = optionsHTML;
 
+        document.querySelector(".home_screen").style.display = "none";
         document.querySelector(".scoreArea").style.display = "none";
         document.querySelector(".questionArea").style.display = "block";
 

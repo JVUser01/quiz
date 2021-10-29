@@ -14,9 +14,33 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-h1 {
-    color: #FFF;
-    margin: 20px 0;
+.home_screen {
+    text-align: center;
+}
+
+.home_screen img {
+    width: 120px;
+}
+
+.home_screen h2 {
+    color: #fff;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 380px;
+}
+
+.home_screen button {
+    border: 0;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #CCC;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.home_screen button:hover {
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .progress {
